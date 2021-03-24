@@ -1,0 +1,29 @@
+{
+  "name": "bookkeeping-home-backend",
+  "version": "1.0.0",
+  "description": "An application that allows you to track and manage your family budget",
+  "main": "index.js",
+  "repository": "https://github.com/dimtawr/bookkeeping-home-backend",
+  "author": "Dmitry Fotin",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -r esm src/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "joi": "^17.4.0",
+    "joi-password-complexity": "^5.1.0",
+    "jwt": "^0.2.0",
+    "knex": "^0.95.2",
+    "lodash": "^4.17.21",
+    "njwt": "^1.0.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
+  }
+}
