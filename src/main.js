@@ -13,8 +13,10 @@ export function application(config) {
 	router.use(respondWith);
 
 	router.use('/users', require('./features/users').router)
+	router.use('/category', require('./features/category').router)
+
 	router.use((_, __, next) =>
-    next(new ApiError(404, "Route not found", null))
-  );
+		next(new ApiError(404, "Route not found", null))
+	);
 	router.use(errorHandler())
 } 
